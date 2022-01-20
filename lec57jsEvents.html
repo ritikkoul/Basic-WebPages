@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EVENTS</title>
+    <style>
+        .container{
+            font-family: 'Baloo Bhai', cursive;
+
+background-color: black;
+color: turquoise;
+border: 2px solid turquoise;        }
+#btn {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 9px;
+    padding: 4px 14px;
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+#btn:hover {
+    background-color:black;
+    color: turquoise;    
+}
+
+
+    </style>
+</head>
+<body>
+    Browser EVENTS
+    <div class="container">
+        <h1>This the first Paragraph</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, mollitia at. Ducimus quas iure quis quam ipsa nesciunt cupiditate, nulla sint id tenetur illum, tempora non voluptatum ab sunt recusandae cum placeat error odio esse quo asperiores obcaecati. Harum aliquam corporis suscipit. Obcaecati soluta quod, veritatis vel ullam mollitia vero facere ut odio consectetur, ea repudiandae iste est officia accusamus tempora in! Minus voluptatibus doloribus accusantium accusamus iste sed amet ad consequatur eaque excepturi! Fugiat rem inventore, beatae eum architecto quia, dolorum quas, commodi nam atque sequi eligendi aperiam sunt reprehenderit quisquam deleniti illum nesciunt nemo quam obcaecati repellendus consequuntur mollitia voluptatum? Accusamus deserunt fugiat harum adipisci, cumque ducimus sequi aliquid tempora perspiciatis quis corrupti repellat quod laborum ipsam atque neque repudiandae nemo culpa in exercitationem doloremque. Debitis reiciendis odit quidem illum iste natus aut sapiente architecto at? Neque quidem quas aut laboriosam accusantium sed aperiam voluptatibus consectetur harum veniam, nam ducimus aspernatur beatae, amet debitis modi sequi aliquid, porro autem eos vel provident ipsa. Aliquid, voluptas? Quis est at facere asperiores, accusamus quae cumque! Molestiae corrupti doloremque, asperiores quas sequi iusto labore nemo atque at corporis ipsum minima voluptate assumenda consequatur, ad earum voluptatibus tenetur quaerat, deleniti facilis cupiditate. Qui ipsum voluptatum natus perferendis minima ex vero quibusdam enim dicta, ipsam amet voluptatibus non? Odit excepturi quis cupiditate architecto magni, neque dicta, assumenda voluptatem nostrum, voluptatum ipsa cumque. Excepturi aliquam doloribus ad praesentium, minima perferendis deserunt blanditiis sapiente quia tenetur dolor nulla perspiciatis illum vero ut ab eum natus, ducimus nesciunt dicta quod? Distinctio, necessitatibus. Quo cupiditate eos deleniti nobis vitae sapiente ipsum adipisci? Voluptas fugit sed magni ducimus ipsa iusto aspernatur? Impedit nemo quam perspiciatis reiciendis labore ab unde soluta porro eaque consequatur tempora vitae accusantium deserunt doloribus, dicta iusto natus numquam voluptates in inventore nam. Omnis tempora sit, odit molestias consequatur eveniet numquam quo repudiandae consequuntur possimus maxime? Assumenda rem ipsa voluptate doloribus in vero ratione labore similique distinctio quo possimus, aspernatur nemo, quod earum minima illo ducimus veniam facere saepe, eius accusantium vitae ut dolorum. Magni modi quibusdam animi eaque atque odio rerum perferendis, quam eligendi commodi veniam alias doloribus consequuntur sint eius aliquid fuga minima dicta excepturi ad maxime iusto iste repellendus! Velit, similique inventore harum quod beatae repellat facere aut ab, animi nostrum incidunt perspiciatis officiis eum. Tenetur quos dolore error vel, doloremque modi fuga delectus hic soluta reiciendis eveniet repudiandae corporis tempora expedita magni dicta praesentium est, quis id deserunt exercitationem ut. Quasi, odit! Saepe aperiam aspernatur exercitationem sed? Maiores ducimus quae nemo dolorum! Illum accusamus dolores quia dolorum illo tempora laudantium officia ex optio commodi maxime molestias dolore libero voluptatibus, hic eius?</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+</body>
+<script>
+//     let para=document.getElementById('para');
+//     para.addEventListener('mouseover',function run()
+//     {console.log('Mouse Inside')
+// });
+//     para.addEventListener('mouseout',function run()
+//     {console.log('Mouse now went Outside')
+// });
+let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            alert('Mouse Inside')
+        });
+
+        para.addEventListener('mouseout', function run(){
+            alert('Mouse now went outside')
+        });
+
+    function toggleHide()
+    {
+        let para=document.getElementById('para');
+        if(para.style.display !='none'){
+            para.style.display='none';
+        }
+        else
+        {
+            para.style.display='block';
+        }
+    }
+</script>
+</html>

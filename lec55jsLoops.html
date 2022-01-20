@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS FOR EACH, FOR key IN,WHILE,DO</title>
+</head>
+<body>
+    <script>
+        console.log("tHIS IS TUTORIAL 55");
+        let i=0;
+        for(i=0;i<6;i++)
+        {
+            console.log(i);
+        
+        }
+        let friends=["Ritik","Sudhanshu","Sanskar"];
+        for(let index=0;index<friends.length;index++){
+        console.log("Hello friends chai pe lo"+friends[index])
+        }
+        let employee = {
+        name: "RITIK",
+        salary: 1552562,
+        channel: "KOUL"
+    }
+for(key in employee)
+{
+    console.log(`The ${key} of employee is ${employee[key]}`);
+
+}
+
+    // friends.forEach(function f(element){
+    //     console.log("Hello Friend, " + element + " to modern JavaScript");
+    // });
+
+    // for (element of friends){
+    //     console.log("Hello Friend, " + element + " to modern JavaScript again");
+    // }
+     
+    // while loop in js
+    let c =0;
+    while(c<4){
+        console.log(`${c} is less than 4`);
+        c++;
+    }
+    
+    // do while loop in js
+    let j =34;
+    do{
+        console.log(`${j} is less than 4 and we are inside do while loop`);
+        j++;
+    }while(j<4);
+    </script>
+</body>
+</html>
